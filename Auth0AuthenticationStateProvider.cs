@@ -1,7 +1,7 @@
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components.Authorization;
-using MauiBlazorAuth0App.Auth0;
+using Auth0.OidcClient;
 
 public class Auth0AuthenticationStateProvider : AuthenticationStateProvider
 {
