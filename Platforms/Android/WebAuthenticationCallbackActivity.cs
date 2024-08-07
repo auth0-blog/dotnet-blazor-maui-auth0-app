@@ -1,7 +1,7 @@
 using Android.App;
 using Android.Content.PM;
 
-namespace MauiBlazorAuth0App;
+namespace MauiAuth0App;
 
 [Activity(NoHistory = true, LaunchMode = LaunchMode.SingleTop, Exported = true)]
 [IntentFilter(new[] { Android.Content.Intent.ActionView },

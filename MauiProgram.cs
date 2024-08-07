@@ -1,7 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
-using MauiBlazorAuth0App.Data;
 using Microsoft.AspNetCore.Components.Authorization;
-using MauiBlazorAuth0App.Auth0;
+using Auth0.OidcClient;
 
 namespace MauiBlazorAuth0App;
 
@@ -24,18 +23,16 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 
-		builder.Services.AddSingleton<WeatherForecastService>();
-
 		builder.Services.AddSingleton(new Auth0Client(new()
-    {
-      Domain = "<YOUR_AUTH0_DOMAIN>",
-      ClientId = "<YOUR_CLIENT_ID>",
-	    Scope = "openid profile",
-	    RedirectUri = "myapp://callback"
-    }));
+          {
+            Domain = "<YOUR_AUTH0_DOMAIN>",
+            ClientId = "<YOUR_CLIENT_ID>",
+            Scope = "openid profile",
+            RedirectUri = "myapp://callback/"
+          }));
 		builder.Services.AddAuthorizationCore();
 		builder.Services.AddScoped<AuthenticationStateProvider, Auth0AuthenticationStateProvider>();
-
+		
 		return builder.Build();
 	}
 }

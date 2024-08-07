@@ -8,7 +8,7 @@
 
   <Identity Name="maui-package-name-placeholder" Publisher="CN=User Name" Version="0.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="50536BEC-405A-4F67-838F-14F1F64B041F" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="D9D7AB7C-F7B7-4C9C-B0E1-5A9D683BC09D" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>$placeholder$</DisplayName>
@@ -40,7 +40,7 @@
       <Extensions>
           <uap:Extension Category="windows.protocol">
           <uap:Protocol Name="myapp">
-              <uap:DisplayName>MauiBlazorAuth0App</uap:DisplayName>
+              <uap:DisplayName>MauiAuth0App</uap:DisplayName>
           </uap:Protocol>
           </uap:Extension>
       </Extensions>

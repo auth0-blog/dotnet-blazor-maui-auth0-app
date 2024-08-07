@@ -4,7 +4,7 @@ Check out the article [Add Authentication to .Blazor Hybrid Apps in .NET MAUI](h
 
 # Requirements
 
-- [.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet/7.0) installed on your machine
+- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) installed on your machine
 - The required assets needed for your target(s) platform(s) as described [here](https://docs.microsoft.com/en-us/dotnet/maui/get-started/first-app)
 - Visual Studio 2022 for Windows 17.3  or Visual Studio 2022 for Mac 17.4 (optional)
 
@@ -24,19 +24,19 @@ Check out the article [Add Authentication to .Blazor Hybrid Apps in .NET MAUI](h
 
    ```bash
    # macOS target platform
-   dotnet build -t:Run -f net7.0-maccatalyst
+   dotnet build -t:Run -f net8.0-maccatalyst
    
    # Android target platform
-   dotnet build -t:Run -f net7.0-android
+   dotnet build -t:Run -f net8.0-android
    
    # iOS target platform
-   dotnet build -t:Run -f net7.0-ios
+   dotnet build -t:Run -f net8.0-ios
    
    # Windows target platform (⚠️ Currently not working! ⚠️)
-   dotnet build -t:Run -f net7.0-windows10.0.19041.0
+   dotnet build -t:Run -f net8.0-windows10.0.19041.0 -p:WindowsPackageType=None
    ```
    
-   > :warning: This application has been tested on macOS Monterey 12.6.2 with Xcode 14.2.
+   > :warning: This application has been tested on macOS Sonoma 14.5 with Xcode 15.4.
    >
    > Be aware that several issues may prevent it from running on other platforms.
    >
