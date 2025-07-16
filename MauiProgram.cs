@@ -28,7 +28,9 @@ public static class MauiProgram
             Domain = "<YOUR_AUTH0_DOMAIN>",
             ClientId = "<YOUR_CLIENT_ID>",
             Scope = "openid profile",
-            RedirectUri = "myapp://callback/"
+            RedirectUri = "myapp://callback/",
+            PostLogoutRedirectUri = "myapp://callback/"
+
           }));
 		builder.Services.AddAuthorizationCore();
 		builder.Services.AddScoped<AuthenticationStateProvider, Auth0AuthenticationStateProvider>();
